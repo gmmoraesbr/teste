@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard UI Tabs</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="assets/custom.css">
+
+    
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="col-md-12">
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Estacionamento</a></li>
+                    <li><a href="#tabs-2">Manobrista</a></li>
+                </ul>
+
+                <div id="tabs-1">  
+                    <form id="form-estacionamento">
+                        <div class="form-row">
+                            <div class="form-group col-md-2">
+                                <label for="Marca">Marca</label>
+                                <input type="text" id="Marca" class="form-control">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="Modelo">Modelo</label>
+                                <input type="text" id="Modelo" class="form-control">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="Placa">Placa</label>
+                                <input type="text" id="Placa" class="form-control">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputPessoa-js">Manobrista:</label>
+                                <select id="pessoasSelected" class="form-control">
+                                        <option selected="selected">Seleciona Manobrista</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2 no-label hidden ">
+                                <button type="submit" class="btn btn-success btn-block" id="insertEstacionamento">Inserir</button>
+                            </div>
+                            <div class="form-group col-md-2 no-label hidden" style="display: none">
+                                    <button type="submit" class="btn btn-success btn-block" id="updateEstacionamento">Salvar</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="table-responsive">
+                        <div class="loading loading-kpi-js">
+                            <img src="assets/loading-anim.svg" />
+                        </div>
+                        <table id="table-estacionamento" class="display" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Marca</th>
+                                    <th>Modelo</th>
+                                    <th>Placa</th>
+                                    <th class="control">Ações</th>
+                                    <th style="display:none">PessoaId</th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <th>Marca</th>
+                                    <th>Modelo</th>
+                                    <th>Placa</th>
+                                    <th class="control">Ações</th>
+                                    <th style="display:none">PessoaId</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="tabs-2">
+                    <form id="form-manobrista">
+                        <div class="form-row">
+                            <div class="form-group col-md-2">
+                                <label for="Nome">Nome</label>
+                                <input type="text" id="Nome" class="form-control">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="CPF">CPF</label>
+                                <input type="text" id="Documento" class="form-control">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputKpi-js">Data de nascimento</label>
+                                <input type="text" id="DataNascimento" class="form-control datepicker" name="">
+                            </div>
+                            <div class="form-group col-md-2 no-label">
+                                <button type="submit" class="btn btn-success btn-block" id="insertManobrista">Inserir</button>
+                            </div>
+                            <div class="form-group col-md-2 no-label" style="display: none">
+                                <button type="submit" class="btn btn-success btn-block" id="updateManobrista">Salvar</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="table-responsive">
+                        <div class="loading loading-kpi-js">
+                            <img src="assets/loading-anim.svg" />
+                        </div>
+                        <table id="table-manobrista" class="display" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>CPF</th>
+                                    <th>Data de Nascimento</th>
+                                    <th class="control">Ações</th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>CPF</th>
+                                    <th>Data de Nascimento</th>
+                                    <th class="control">Ações</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>    
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
+    <script src="assets/js/moment/moment-with-locales.js"></script>
+
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/messages/messages.pt-br.js" type="text/javascript"></script>
+
+    <script src="assets/js/notify/notify.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/API.js"></script>
+</body>
+
+</html>

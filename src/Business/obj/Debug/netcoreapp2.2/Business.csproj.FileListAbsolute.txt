@@ -1,0 +1,16 @@
+C:\Users\Lenovo\Documents\pessoal\projetos\API\src\Business\bin\Debug\netcoreapp2.2\Business.deps.json
+C:\Users\Lenovo\Documents\pessoal\projetos\API\src\Business\bin\Debug\netcoreapp2.2\Business.dll
+C:\Users\Lenovo\Documents\pessoal\projetos\API\src\Business\bin\Debug\netcoreapp2.2\Business.pdb
+C:\Users\Lenovo\Documents\pessoal\projetos\API\src\Business\obj\Debug\netcoreapp2.2\Business.csprojAssemblyReference.cache
+C:\Users\Lenovo\Documents\pessoal\projetos\API\src\Business\obj\Debug\netcoreapp2.2\Business.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Documents\pessoal\projetos\API\src\Business\obj\Debug\netcoreapp2.2\Business.AssemblyInfo.cs
+C:\Users\Lenovo\Documents\pessoal\projetos\API\src\Business\obj\Debug\netcoreapp2.2\Business.dll
+C:\Users\Lenovo\Documents\pessoal\projetos\API\src\Business\obj\Debug\netcoreapp2.2\Business.pdb
+C:\Users\Lenovo\Documents\pessoal\projetos\ESTAPAR\src\Business\bin\Debug\netcoreapp2.2\Business.deps.json
+C:\Users\Lenovo\Documents\pessoal\projetos\ESTAPAR\src\Business\bin\Debug\netcoreapp2.2\Business.dll
+C:\Users\Lenovo\Documents\pessoal\projetos\ESTAPAR\src\Business\bin\Debug\netcoreapp2.2\Business.pdb
+C:\Users\Lenovo\Documents\pessoal\projetos\ESTAPAR\src\Business\obj\Debug\netcoreapp2.2\Business.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Documents\pessoal\projetos\ESTAPAR\src\Business\obj\Debug\netcoreapp2.2\Business.AssemblyInfo.cs
+C:\Users\Lenovo\Documents\pessoal\projetos\ESTAPAR\src\Business\obj\Debug\netcoreapp2.2\Business.dll
+C:\Users\Lenovo\Documents\pessoal\projetos\ESTAPAR\src\Business\obj\Debug\netcoreapp2.2\Business.pdb
+C:\Users\Lenovo\Documents\pessoal\projetos\ESTAPAR\src\Business\obj\Debug\netcoreapp2.2\Business.csprojAssemblyReference.cache
